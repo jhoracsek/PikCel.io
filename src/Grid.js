@@ -1,3 +1,7 @@
+ /*
+    Creates and draws the main game grid and initializes all 'Pixel' instances in pixStore. 
+    Additionally, draws grid lines and a border around the board.
+ */
  class Grid {
         constructor(posX, posY, players){
             this.posX = posX;

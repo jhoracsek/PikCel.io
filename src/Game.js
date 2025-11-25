@@ -1,3 +1,10 @@
+
+/*
+    This is the in-game scene. It sets up the board, HUD, animations (logo pulse, grid shine), 
+    player badges, timer, turn info, and manages win screen and “new turn” popups. 
+    It also updates the moving background and handles transitions back to the waiting room/menu.
+*/
+
 class Game extends Phaser.Scene
     {
         constructor(){

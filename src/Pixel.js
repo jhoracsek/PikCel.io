@@ -1,3 +1,10 @@
+/*
+    Represents a single grid cell (e.g., one “pixel” on the board). 
+
+    Tracks its grid coordinates and visual position, draws a clickable square,
+    and handles the logic for placing the player’s color when clicked.
+
+*/
 class Pixel {
         constructor(posX, posY, size, x, y){
             this.x = x;

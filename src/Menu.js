@@ -1,3 +1,8 @@
+/*
+    The pre-game / lobby scene. It displays the logo, animates the background, shows a “Waiting” 
+    card when players are matching up, and transitions into the Game scene when the room is ready.
+*/
+
 class Menu extends Phaser.Scene
     {
         constructor(){

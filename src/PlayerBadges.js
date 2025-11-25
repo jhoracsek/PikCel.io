@@ -1,3 +1,7 @@
+
+/*
+    Creates a manager for the player badge on the right side of the screen.
+*/
 class PlayerBadges{
         constructor(posX, posY){
             this.posX = posX;
@@ -18,6 +22,11 @@ class PlayerBadges{
             this.scene = scene;
         }
 
+
+        /*
+            Removes all existing player boxes, texts, and shadows from the scene then
+            resets internal arrays so the badge list can be rebuilt.
+        */
         resetBoxes(){
             while(this.playerBoxes.length > 0){
                 this.removePlayerBox();
@@ -41,6 +50,14 @@ class PlayerBadges{
                 first = false;
             }
         }
+
+        /*
+            Adds a single player badge at the next vertical slot.
+         
+            num:    Index into playerNames and ogColours for this player.
+            first:  Whether this is the first badge in the list (rounds top corners).
+            last:   Whether this is the last badge in the list (rounds bottom corners).
+        */
 
         addPlayerBox(num, first, last){
                 let n = this.playerBoxes.length;
