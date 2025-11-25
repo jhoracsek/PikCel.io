@@ -55,7 +55,7 @@ cd PikCel.io
 npm install
 
 # Start the server
-node index.js
+node server.js
 ```
 
 Then you can simply open the client through your browser by going to http://localhost:3000.
