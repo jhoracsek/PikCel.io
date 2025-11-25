@@ -41,7 +41,7 @@ The UI also includes:
 - **Node.js** server with **Socket.io**
 - Room management, player assignment, basic bot logic.
 
-## Getting Started (Local Development)
+## Getting Started
 
 Make sure you have [Node.js](https://nodejs.org/) installed.
 
