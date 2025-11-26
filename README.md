@@ -71,23 +71,23 @@ Then you can simply open the client through your browser by going to http://loca
 
 ```bash
 .
-├── images/         # Image assets used by the game
+├── images/               # Image assets used by the game
 ├── node_modules/
-├── res/          # CSS styling
+├── res/                  # CSS styling
 ├── src/        
-│   ├── Game.js       # Main Phaser scene
-│   ├── Grid.js       # Grid construction, layout logic
-│   ├── Main.js       # Bootstrap and Phaser config
-│   ├── Menu.js       # Menu and waiting room logic
-│   ├── Pixel.js      # Single 'Pixel'/board tile
+│   ├── Game.js           # Main Phaser scene
+│   ├── Grid.js           # Grid construction, layout logic
+│   ├── Main.js           # Bootstrap and Phaser config
+│   ├── Menu.js           # Menu and waiting room logic
+│   ├── Pixel.js          # Single 'Pixel'/board tile
 │   ├── PlayerBadges.js   # UI component for player name boxes
-│   ├── helpers.js      # Utility functions
-│   └── net.js        # Client-side networking (Socket.IO events and syncing)
+│   ├── helpers.js        # Utility functions
+│   └── net.js            # Client-side networking (Socket.IO events and syncing)
 ├── .gitignore
 ├── README.md
-├── index.html        # Main webpage
+├── index.html            # Main webpage
 ├── package-lock.json
-├── package.json      # Project dependencies
-├── phaser.min.js       # Phaser game engine
-└── server.js         # Node.js server
+├── package.json          # Project dependencies
+├── phaser.min.js         # Phaser game engine
+└── server.js             # Node.js server
 ```
