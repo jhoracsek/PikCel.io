@@ -47,7 +47,7 @@ The UI also includes:
 
 ## Development
 
-# Getting Started
+### Getting Started
 
 Make sure you have [Node.js](https://nodejs.org/) installed.
 
@@ -67,7 +67,7 @@ node server.js
 Then you can simply open the client through your browser by going to http://localhost:3000.
 
 
-# Project Structure
+### Project Structure
 
 ```bash
 .
