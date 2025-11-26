@@ -53,7 +53,7 @@ Make sure you have [Node.js](https://nodejs.org/) installed.
 
 ```bash
 # Clone the repo
-git clone https://github.com/<your-username>/PikCel.io.git
+git clone https://github.com/jhoracsek/PikCel.io.git
 
 cd PikCel.io
 
