@@ -4,16 +4,19 @@
 
 # PiKCEL.io
 
-PiKCEL.io is a turn-based multiplayer strategy game built for the browser. Players take turns placing pixels on a shared grid, expanding their territory while blocking opponents from doing the same. When your timer runs out, you lose.
+PiKCEL.io is a turn-based multiplayer strategy game built for the browser. Players take turns placing pixels on a shared grid, expanding their territory, while trying to block opponents from doing the same. When your timer runs out, you lose.
 
-This project started as a personal experiment in real-time multiplayer game development and evolved into a full online experience with matchmaking, private rooms, simple bots, and a custom UI.
+This project started as a personal experiment in real-time multiplayer game development and evolved into a full online experience with private rooms, simple bots, and a custom UI.
 
 To play, or find more information about gameplay visit [PiKCEL.io](https://pikcel.io/)!
 
 ## Gameplay Overview
 
 - Start by entering your name.
-- Create a **private room**, join an existing room via **Room ID**, or play against bots.
+- You can either, 
+  - Create a **private room** and send your **Room ID** to your friends,  
+  - join an existing room via **Room ID**,
+  - or play against bots.
 - On your turn, you can:
   - Place pixels on **adjacent blank tiles** to grow your territory.
   - Strategically block opponents from expanding.
@@ -23,25 +26,28 @@ To play, or find more information about gameplay visit [PiKCEL.io](https://pikce
 - Last player standing wins.
 
 The UI also includes:
-- A **“How to play” panel** with animated GIF examples.
-- An **Announcements** section for release notes and updates.
-- An **About** section with links for feedback and contact.
+- A **“How to play” panel** with animated GIF examples demonstrating gameplay.
+- An **Announcements** section for any release notes and or updates.
+- An **About** section with some basic information about the game.
+- A link for bug submissions and contact information.
 
 ## Tech Stack
 
 **Frontend**
 
-- **JavaScript** (no framework, game loop via Phaser)
-- **[Phaser](https://phaser.io/)** – rendering, scenes, tweens, graphics.
-- **HTML / CSS** – custom splash screen, waiting room, chat window, and layout.
-- **Socket.io Client** – for communication with the server.
+- **JavaScript** - No framework, game loop via Phaser.
+- **[Phaser](https://phaser.io/)** – Rendering, scenes, tweens, graphics.
+- **HTML / CSS** – Custom splash screen, waiting room, chat window, and layout.
+- **Socket.io Client** – For communication with the server.
 
 **Backend**
 
 - **Node.js** server with **Socket.io**
 - Room management, player assignment, basic bot logic.
 
-## Getting Started
+## Development
+
+# Getting Started
 
 Make sure you have [Node.js](https://nodejs.org/) installed.
 
@@ -59,3 +65,29 @@ node server.js
 ```
 
 Then you can simply open the client through your browser by going to http://localhost:3000.
+
+
+# Project Structure
+
+```bash
+.
+├── images/         # Image assets used by the game
+├── node_modules/
+├── res/          # CSS styling
+├── src/        
+│   ├── Game.js       # Main Phaser scene
+│   ├── Grid.js       # Grid construction, layout logic
+│   ├── Main.js       # Bootstrap and Phaser config
+│   ├── Menu.js       # Menu and waiting room logic
+│   ├── Pixel.js      # Single 'Pixel'/board tile
+│   ├── PlayerBadges.js   # UI component for player name boxes
+│   ├── helpers.js      # Utility functions
+│   └── net.js        # Client-side networking (Socket.IO events and syncing)
+├── .gitignore
+├── README.md
+├── index.html        # Main webpage
+├── package-lock.json
+├── package.json      # Project dependencies
+├── phaser.min.js       # Phaser game engine
+└── server.js         # Node.js server
+```
